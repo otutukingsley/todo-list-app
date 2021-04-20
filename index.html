@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="top-half"></div>
+    <main class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <h1>TODO</h1>
+            <div class="tgl-btn">
+              <img src="./img/icon-sun.svg" alt="toogle-light-mode" />
+            </div>
+          </div>
+          <form class="type-todo" id="todo-form" autocomplete="off">
+            <div class="circle"></div>
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Create a new todo..."
+            />
+          </form>
+          <ul class="check-group mt-4"></ul>
+          <div class="card">
+            <div class="card-body">
+              <div>
+                <span class="items-left">0 Items Left</span>
+              </div>
+              <div class="controls">
+                <a href="#" class="all"> All </a>
+                <a href="#" class="active-now">Active</a>
+                <a href="#" class="completed">Completed</a>
+              </div>
+              <span class="clear-completed">
+                <a href="#" class="clear-completed"
+                  >Clear completed</a
+                ></span
+              >
+            </div>
+          </div>
+          <div id="hidden" class="card mt-4" style="display: none">
+            <div class="card-body-0">
+              <a href="#" class="all">All</a>
+              <a href="#" class="active-now">Active</a>
+              <a href="#" class="completed">Completed</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
